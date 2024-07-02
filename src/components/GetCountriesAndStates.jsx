@@ -27,7 +27,7 @@ const GetCountriesAndStates = () => {
   return (
     <div className="text-black mx-4 rounded py-1 px-2 outline-0 border border-gray-100">
       <select className=" w-44" onChange={handleCountryChange}>
-        <option>Select country</option>
+        <option>Select Country</option>
         {data.map((each) => (
           <option key={each.country_id} value={each.country_id}>
             {each.country_name}
