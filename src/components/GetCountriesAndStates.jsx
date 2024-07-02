@@ -13,7 +13,7 @@ const GetCountriesAndStates = () => {
   const getStates = () => {
     if (!selectedCountry) return null;
     return (
-      <select className="mx-4 w-44">
+      <select className="mx-4 w-44 rounded py-1 px-2 outline-0 border border-gray-100">
         <option>Select State</option>
         {selectedCountry.states.map((each) => (
           <option key={each.state_id} value={each.state_id}>
@@ -25,7 +25,7 @@ const GetCountriesAndStates = () => {
   };
 
   return (
-    <div className="text-black mx-4">
+    <div className="text-black mx-4 rounded py-1 px-2 outline-0 border border-gray-100">
       <select className=" w-44" onChange={handleCountryChange}>
         <option>Select country</option>
         {data.map((each) => (
