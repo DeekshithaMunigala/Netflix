@@ -4,7 +4,6 @@ import logo from "../assets/Netflix_Logo.png";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
-import GetCountriesAndStates from "./GetCountriesAndStates";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -28,7 +27,6 @@ const Header = () => {
         <img className="w-48 h-[75px]" src={logo} alt="Netflix_Logo" />
         {user && (
           <div className="flex items-center">
-            <GetCountriesAndStates />
             <img
               className="w-8 h-8 mr-5 rounded-full cursor-pointer"
               src={user.photoURL}
