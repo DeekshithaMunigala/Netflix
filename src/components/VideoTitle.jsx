@@ -2,7 +2,7 @@ import { IoCaretForwardCircle } from "react-icons/io5";
 
 const VideoTitle = ({ title, overview }) => {
   return (
-    <div className="absolute text-white pt-[20%] w-screen aspect-video px-24 ">
+    <div className="absolute text-white pt-[20%] w-screen aspect-video px-[5%] ">
       <h1 className="text-6xl font-bold">{title}</h1>
       <p className="text-lg font-semibold py-6 w-2/4">{overview}</p>
       <div className="flex flex-row items-center justify-start font-semibold">
